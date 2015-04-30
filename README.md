@@ -9,7 +9,7 @@ The SSL cipher configuration is based on [mozillas recommendation](https://wiki.
 
 ## Volumes
 
-- `/etc/nginx/conf.d`: Virtual hist directory
+- `/etc/nginx/conf.d`: Virtual host directory
 - `/etc/nginx/certs`: Directory to place certificates
 - `/var/log/nginx`: Nginx logs
 
@@ -32,7 +32,7 @@ ExecStart=/usr/bin/docker run --name=nginx \
   -v /some/path/conf.d:/etc/nginx/conf.d:ro \
   -v /some/path/certs:/etc/nginx/certs:ro \
   -v /some/path/log:/var/log/nginx \
-  nginx
+  desertbit/nginx
 
 [Install]
 Alias=nginx.service
