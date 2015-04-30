@@ -5,7 +5,7 @@ A strong DHE parameter is also generated automatically during the first startup.
 
 ## SSL Support
 
-The SSL cipher configuration is based on [mozillas recommendation](https://wiki.mozilla.org/Security/Server_Side_TLS) which should provide compatibility with clients back to Firefox 1, Chrome 1, IE 7, Opera 5, Safari 1, Windows XP IE8, Android 2.3, Java 7. The configuration also enables HSTS, and SSL session caches.
+The SSL cipher configuration is based on [mozillas recommendation](https://wiki.mozilla.org/Security/Server_Side_TLS) which should provide compatibility with clients back to Firefox 1, Chrome 1, IE 7, Opera 5, Safari 1, Windows XP IE8, Android 2.3, Java 7.
 
 ## Volumes
 
