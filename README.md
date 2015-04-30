@@ -25,6 +25,7 @@ server {
   include /etc/nginx/includes/ssl;
   include /etc/nginx/includes/ssl_stapling;
   include /etc/nginx/includes/block;
+}
 ```
 
 ## SSL Support
