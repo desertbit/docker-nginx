@@ -9,7 +9,8 @@ MAINTAINER Roland Singer, roland.singer@desertbit.com
 ADD nginx.conf /etc/nginx/nginx.conf
 ADD run.sh /usr/bin/run.sh
 RUN chmod +x /usr/bin/run.sh && \
-	mkdir -p /etc/nginx/{conf.d,certs}
+	mkdir -p /etc/nginx/conf.d && \
+	mkdir -p /etc/nginx/certs
 
 
 VOLUME ["/etc/nginx/conf.d", "/etc/nginx/certs", "/var/log/nginx"]
