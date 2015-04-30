@@ -9,4 +9,4 @@ if [ ! -e "$DHPARAM" ]; then
 fi
 
 # Start nginx
-nginx
+exec nginx
