@@ -51,7 +51,7 @@ TimeoutStartSec=0
 Restart=always
 ExecStartPre=-/usr/bin/docker kill nginx
 ExecStartPre=-/usr/bin/docker rm nginx
-ExecStartPre=/usr/bin/docker pull nginx
+ExecStartPre=/usr/bin/docker pull desertbit/nginx
 ExecStart=/usr/bin/docker run --name=nginx \
   -p 80:80 -p 443:443 \
   -v /some/path/conf.d:/etc/nginx/conf.d:ro \
