@@ -1,7 +1,31 @@
 # Nginx Docker Image
 
-Deploy Nginx with some global preset SSL rules.
+Deploy Nginx with some useful presets available.
 A strong DHE parameter is also generated automatically during the first startup.
+
+## Presets
+
+All available presets are located in the /etc/nginx/includes directory.
+
+- `/etc/nginx/includes/ssl`: Important SSL rules as HTTPS server optimization, Forward Secrecy, HTTP Strict Transport Security,...
+- `/etc/nginx/includes/ssl_stapling`: OCSP Stapling
+- `/etc/nginx/includes/block`: Block some unwanted visitors
+
+```
+server {
+  listen 443 ssl;
+
+  ...
+
+  ssl on;
+  ssl_certificate ...;
+  ssl_certificate_key ...;
+
+  # Include presets
+  include /etc/nginx/includes/ssl;
+  include /etc/nginx/includes/ssl_stapling;
+  include /etc/nginx/includes/block;
+```
 
 ## SSL Support
 
