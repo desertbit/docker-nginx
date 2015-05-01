@@ -18,6 +18,6 @@ ssl_dhparam /etc/nginx/certs/dhparam.pem;
 
 # HTTP Strict Transport Security
 # See https://raymii.org/s/tutorials/HTTP_Strict_Transport_Security_for_Apache_NGINX_and_Lighttpd.html
-add_header Strict-Transport-Security max-age=63072000;
+add_header Strict-Transport-Security max-age=31536000;
 add_header X-Frame-Options DENY;
 add_header X-Content-Type-Options nosniff;
